@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n = +prompt('nhap so luon phan tu mang:')
+  let arr = [];
+  for (let i = 0; i < n; i++) {
+    arr[i] = prompt(`arr[${i}]`)
+  }
+  function countNumber(a){
+    let count = 0;
+    for (let i = 0; i < a.length; i++) {
+      if(arr[i] == parseInt(arr[i])){
+        count++;
+      }
+    }
+    return count;
+  }
+  let x = countNumber(arr);
+  console.log(x);
+</script>
+</body>
+</html>

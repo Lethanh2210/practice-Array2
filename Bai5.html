@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkStr(str1, str2){
+        let i =0;
+        let j =0;
+        if(str1.length === str2.length){
+            if(str1[i] !== str2[j]){
+                return false;
+            }
+        }else {
+            return false;
+        }
+        return true;
+    }
+    str1 = prompt();
+    str2= prompt();
+    if(checkStr(str1,str2) === true){
+        alert('Chuoi giong nhau');
+    }else alert('chuoi khong giong nhau')
+</script>
+</body>
+</html>
